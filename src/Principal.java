@@ -80,6 +80,6 @@ public class Principal {
 
         }
 
-        System.out.println("\nFim.");
+        System.out.println("\nFim!");
     }
 }
