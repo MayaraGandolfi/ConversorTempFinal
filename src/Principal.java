@@ -33,7 +33,7 @@ public class Principal {
                 break;
             }
 
-            System.out.println("\n*------------------------------ Resultado ------------------------------*\n");
+            System.out.println("\n*-------------------- Resultado ----------------------------------------*\n");
 
             ToCelsius toCelsius = new ToCelsius();
             ToFahrenheit toFahrenheit = new ToFahrenheit();
