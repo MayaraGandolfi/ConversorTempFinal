@@ -2,8 +2,13 @@ import java.util.Scanner;
 
 public class ContinueOperation {
 
-    public int continueOperation() {
+    public int continueOperation(int x) {
         Scanner input = new Scanner(System.in);
+
+        if (x > 2) {
+            System.out.println("O sistema será finaizado!");
+            return 0;
+        }
 
         System.out.println("\n*-----------------------------------------------------------------------*");
         System.out.println("                Menu de opções");
@@ -17,13 +22,11 @@ public class ContinueOperation {
             if (opcao == 0 || opcao == 1) {
                 return opcao;
             }
-            System.out.println("Opção inválida. Sistema será finalizado!");
-            opcao = 0;
-            return opcao;
+            System.out.println("Opção Incorreta.");
+            return continueOperation(x + 1);
         } catch (java.util.InputMismatchException e) {
             System.err.println("Opção Incorreta! - " + e.getMessage());
-            System.out.println("O sistema será finaizado!");
-            return 0;
+            return continueOperation(x + 1);
         }
 
     }

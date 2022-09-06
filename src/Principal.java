@@ -76,7 +76,7 @@ public class Principal {
             System.out.println("\n******************** Processo concluído! *******************************");
 
             ContinueOperation continueOperation = new ContinueOperation();
-            continuar = continueOperation.continueOperation();
+            continuar = continueOperation.continueOperation(0);
 
         }
 
